@@ -4,7 +4,20 @@
     <TargetFramework>net7.0</TargetFramework>
     <RootNamespace>PCommand_App</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <Nullable>annotations</Nullable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Handler\" />
+    <Folder Include="Validation\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cmd\Cmd.csproj" />
+  </ItemGroup>
 
 </Project>
