@@ -3,9 +3,8 @@ using MediatR;
 
 namespace PQuery_App.Request
 {
-    public class GetCommentQuery : IRequest<Result>
+    public class GetPostQuery : IRequest<Result>
     {
         public int PostId { get; set; }
-        public int CommentId { get; set; }
     }
 }
