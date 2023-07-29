@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Handler\Event\" />
     <Folder Include="Validation\" />
   </ItemGroup>
 
