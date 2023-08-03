@@ -1,5 +1,8 @@
-var builder = WebApplication.CreateBuilder(args);
+using Data.DataAccess.Contract;
+using Data.DataAccess;
+using PQuery.Info;
 
+var builder = WebApplication.CreateBuilder(args);
 
 #region Services
 
@@ -10,6 +13,8 @@ builder.Services.AddMediatR(new MediatRServiceConfiguration
 {
     Lifetime = ServiceLifetime.Transient
 });
+builder.Services.AddElasticSearch(builder.Configuration);
+builder.Services.AddTransient<IElasticsearchDataAccess, ElasticsearchDataAccess>();
 
 #endregion
 
