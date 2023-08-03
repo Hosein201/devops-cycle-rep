@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -6,8 +6,15 @@
     <Nullable>annotations</Nullable>
   </PropertyGroup>
 
+
   <ItemGroup>
     <Folder Include="DataAccess\" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Elasticsearch.Net" Version="7.17.5" />
+    <PackageReference Include="NEST" Version="7.17.5" />
   </ItemGroup>
 
 </Project>
