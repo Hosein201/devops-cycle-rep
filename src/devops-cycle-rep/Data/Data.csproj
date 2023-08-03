@@ -8,11 +8,6 @@
 
 
   <ItemGroup>
-    <Folder Include="DataAccess\" />
-  </ItemGroup>
-
-
-  <ItemGroup>
     <PackageReference Include="Elasticsearch.Net" Version="7.17.5" />
     <PackageReference Include="NEST" Version="7.17.5" />
   </ItemGroup>
