@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
-    <Nullable>annotations</Nullable>
+    <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>03c8c95b-ae9a-4563-ac09-c9c97aa5d69e</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
