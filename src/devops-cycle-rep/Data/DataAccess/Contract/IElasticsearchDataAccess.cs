@@ -1,6 +1,6 @@
 ﻿using Nest;
 
-namespace Data.DataAccess
+namespace Data.DataAccess.Contract
 {
     public interface IElasticsearchDataAccess
     {
