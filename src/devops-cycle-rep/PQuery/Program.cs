@@ -1,6 +1,7 @@
-using Data.DataAccess.Contract;
 using Data.DataAccess;
+using Data.DataAccess.Contract;
 using PQuery.Info;
+using PQuery_App;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +16,7 @@ builder.Services.AddMediatR(new MediatRServiceConfiguration
 });
 builder.Services.AddElasticSearch(builder.Configuration);
 builder.Services.AddTransient<IElasticsearchDataAccess, ElasticsearchDataAccess>();
+builder.Services.AddAutoMapper(typeof(PQueryApplication));
 
 #endregion
 
